@@ -1,0 +1,15 @@
+<nav class="navbar navbar-dark bg-dark mb-5">
+  <a class="navbar-brand" href="javascript:;" routerLink="/">Angular & Bootstrap</a>
+  <div class="navbar-expand mr-auto">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="javascript:;" routerLink="/">Home</a>
+    </div>
+  </div>
+  <div class="navbar-expand ml-auto navbar-nav">
+    <div class="navbar-nav">
+      <a *ngIf="authService.isLoggedIn()" class="nav-item nav-link" href="javascript:;" target="_blank" (click)="authService.logout()">
+        <i class="fa fa-power-off"></i>
+      </a>
+    </div>
+  </div>
+</nav>
